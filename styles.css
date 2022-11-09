@@ -83,3 +83,9 @@ html {
     font-size: 5px;
   }
 }
+
+@media (max-width: 460px) {
+  html {
+    font-size: 4px;
+  }
+}
