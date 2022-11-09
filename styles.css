@@ -18,6 +18,7 @@ html {
     ),
     url("images/forest.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   font-size: 5rem;
@@ -27,12 +28,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 150px;
+  margin: 15rem;
 }
 
 #pic {
-  width: 250px;
-  height: 250px;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
 }
 
@@ -51,4 +52,34 @@ html {
 
 .fa-brands {
   color: black;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 920px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 732px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 645px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 5px;
+  }
 }
