@@ -35,19 +35,42 @@ html {
   width: 25rem;
   height: 25rem;
   border-radius: 50%;
+
+  opacity: 0;
+  animation-name: comeup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 #name {
   font-family: "Vidaloka", serif;
+  animation-name: comeup;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 #title {
   font-size: 3rem;
+
+  opacity: 0;
+  animation-name: comeup;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 #contact {
   font-size: 2.5rem;
   padding: 10px;
+
+  opacity: 0;
+  animation-name: comeup;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .fa-brands {
@@ -87,5 +110,16 @@ html {
 @media (max-width: 460px) {
   html {
     font-size: 4px;
+  }
+}
+
+@keyframes comeup {
+  from {
+    transform: translate(0, 75%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
